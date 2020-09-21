@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
         int oldScore = Integer.parseInt(teamAScore.getText().toString());
         int score = Integer.parseInt(view.getTag().toString());
         teamAScore.setText("" + (score + oldScore));
-    }
+    }//
 
     public void teamB_AddScore(View view) {
         /*
@@ -51,10 +51,6 @@ public class MainActivity extends Activity {
         TextView teamBScore = (TextView) findViewById(R.id.teamBScore);
         teamAScore.setText("0");
         teamBScore.setText("0");
-
-        /*
-         * 发送提示信息
-         * */
     }
 
 }
