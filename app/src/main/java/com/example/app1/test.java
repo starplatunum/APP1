@@ -34,7 +34,7 @@ public class test extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                TextView tv=findViewById(R.id.result);
+                TextView tv=findViewById(R.id.result);//jshdfj
                 tv.setText(String.valueOf(Float.parseFloat(charSequence.toString())*Float.parseFloat(findViewById(R.id.money).getTag().toString())));
             }
 
