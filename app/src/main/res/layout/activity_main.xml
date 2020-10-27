@@ -1,88 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:orientation="vertical">
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="Input RMB"
+        android:textAlignment="center" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="#E88616">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_margin="2dp"
-                android:text="@string/text1"
-                android:textColor="@android:color/primary_text_light"
-                android:textSize="30sp"
-                android:textStyle="normal" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="DOLLAR"
+        android:tag="dollar"
+        android:onClick="change"/>
 
-        </RelativeLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="change"
+        android:tag="euro"
+        android:text="EURO" />
 
-        <EditText
-            android:id="@+id/editTextNumberDecimal"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:ems="10"
-            android:gravity="center"
-            android:textSize="26sp"
-            android:hint="Input RMB"
-            android:inputType="numberDecimal" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="change"
+        android:tag="won"
+        android:text="WON" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:textSize="36sp"
-            android:gravity="center"
-            android:text="Hello" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="open"
+        android:text="GONFIG" />
 
-        <Button
-            android:id="@+id/btn_dol"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FF9800"
-            android:layout_marginTop="12dp"
-            android:text="DOLLAR" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="getrate"
+        android:text="getrate" />
 
-        <Button
-            android:id="@+id/btn_eu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FF9800"
-            android:layout_marginTop="12dp"
-            android:text="EURO" />
-
-        <Button
-            android:id="@+id/btn_won"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FF9800"
-            android:layout_marginTop="12dp"
-            android:text="WON" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FF9800"
-
-            android:layout_marginTop="240dp"
-            android:text="CONFIG" />
-
-    </LinearLayout>
-
-</RelativeLayout>
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="showrate"
+        android:text="showrate" />
+</LinearLayout>
