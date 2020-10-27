@@ -3,7 +3,7 @@
     android:text2="@string/text"
     android:text3="@string/text"
 
-    <string name="text1">CourtCounter</string>
+    <string name="text1">Hello</string>
     <string name="text2">摄氏度</string>
     <string name="text3">转换</string>
 
