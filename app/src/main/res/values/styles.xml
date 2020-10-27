@@ -5,8 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-        <item name="colorButtonNormal">@android:color/holo_blue_dark</item>
+        <item name="colorButtonNormal">@color/colorBackground</item>
     </style>
 
 </resources>
