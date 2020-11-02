@@ -51,7 +51,7 @@ class myAdapter extends ArrayAdapter implements AdapterView.OnItemClickListener,
         Log.i(TAG, "onItemClick: detailStr=" + detailStr);
         //TextView title = (TextView) view.findViewById(R.id.title);
         //TextView detail = (TextView) view.findViewById(R.id.detail);
-        Intent second = new Intent(getContext(), calc_rate.class);
+
         second.putExtra("money", titleStr);
         second.putExtra("rate", detailStr);
         getContext().startActivity(second);
